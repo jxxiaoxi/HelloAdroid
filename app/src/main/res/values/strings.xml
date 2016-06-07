@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">HellloAndroid</string>
+    <string name="app_name">HellAndroid</string>
+    <string name="tv_muxer">组合视频音频</string>
+    <string name="tv_original_video">原视频</string>
+    <string name="tv_dubbing">配音</string>
+    <string name="ed_video_select">请选择视频</string>
+    <string name="ed_audio_select">请选择配音</string>
+    <string name="bt_muxer">开始合成</string>
+    <string name="bt_recordVideo">录像</string>
 </resources>
