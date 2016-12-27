@@ -22,7 +22,8 @@ public class ViewPagerAdapter<E extends View> extends PagerAdapter {
 
     @Override
     public int getCount() {
-        return mList.size();
+        //return mList.size();
+        return Integer.MAX_VALUE;
     }
 
     @Override
@@ -37,7 +38,7 @@ public class ViewPagerAdapter<E extends View> extends PagerAdapter {
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
         LogUtils.e("liuwei", "destroyItem : " + position);
-        container.removeView(mList.get(position));
+        container.removeView((View) object);
     }
 
 /*
@@ -47,8 +48,10 @@ public class ViewPagerAdapter<E extends View> extends PagerAdapter {
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
         LogUtils.e("liuwei", "instantiateItem : " + position);
-        container.addView(mList.get(position));
-        return mList.get(position);
+        //拿着position位置 % 集合.size
+        int newposition = position % mList.size();
+        container.addView(mList.get(newposition));
+        return mList.get(newposition);
     }
 
 }

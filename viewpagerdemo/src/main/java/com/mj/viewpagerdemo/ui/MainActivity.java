@@ -2,7 +2,6 @@ package com.mj.viewpagerdemo.ui;
 
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Message;
 import android.support.v4.view.ViewPager;
 import android.view.MotionEvent;
 import android.view.View;
@@ -21,7 +20,8 @@ public class MainActivity extends BaseActivity {
     private ViewPager mViewPager;
     public int[] mPic = {R.mipmap.ic_launcher, R.mipmap.a, R.mipmap.b, R.mipmap.c};
     private ArrayList<View> mViewList;
-    private final int mScrolleTime = 5000;//切换View的间隔时间
+    private final int mScrolleTime = 2000;//切换View的间隔时间
+    int mPreviousPosition;
 
     private Handler mHandler = new Handler() {
     };
@@ -52,6 +52,10 @@ public class MainActivity extends BaseActivity {
         mViewPager.addOnPageChangeListener(new ViewPagerOnPageChangeListener());
         mViewPager.setOnTouchListener(new PageViewOnTouchListener());
 
+//        //设置当前viewpager要显示第几个条目
+//        int item = Integer.MAX_VALUE / 2 - (Integer.MAX_VALUE / 2 % mViewList.size());
+//        mViewPager.setCurrentItem(item);
+
         mHandler.postDelayed(mRunnable, mScrolleTime);
 
     }
@@ -60,8 +64,12 @@ public class MainActivity extends BaseActivity {
 
         @Override
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-          //  LogUtils.e(TAG, "onPageScrolled  position : " + position + "   ; positionOffset : " + positionOffset + "  ;positionOffsetPixels  : " + positionOffsetPixels);
-            mViewList.get(position).setOnClickListener(new PageOnClickListener());
+            int newposition = position % mViewList.size();
+            //  LogUtils.e(TAG, "onPageScrolled  position : " + position + "   ; positionOffset : " + positionOffset + "  ;positionOffsetPixels  : " + positionOffsetPixels);
+            mViewList.get(newposition).setOnClickListener(new PageOnClickListener());
+
+            //拿着position位置 % 集合.size
+           // mPreviousPosition = newposition;
         }
 
         @Override
@@ -80,7 +88,8 @@ public class MainActivity extends BaseActivity {
 
         @Override
         public void onClick(View view) {
-            Toast.makeText(MainActivity.this, "click the pagge :  " + mViewPager.getCurrentItem(), Toast.LENGTH_SHORT).show();
+            int item = mViewPager.getCurrentItem()% mViewList.size();
+            Toast.makeText(MainActivity.this, "click the pagge :  " + item, Toast.LENGTH_SHORT).show();
         }
     }
 
