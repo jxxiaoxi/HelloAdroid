@@ -7,4 +7,13 @@
     <string name="ed_audio_select">请选择配音</string>
     <string name="bt_muxer">开始合成</string>
     <string name="bt_recordVideo">录像</string>
+    <string name="bt_mediarecorder">MediaRecorder</string>
+    <string name="title_activity_home_frame">HomeFrameActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="home_tab_home">主页</string>
+    <string name="home_tab_list">积分</string>
+    <string name="home_tab_config">个人中心</string>
 </resources>
