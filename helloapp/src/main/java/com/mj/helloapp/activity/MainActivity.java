@@ -8,10 +8,12 @@ import android.os.Bundle;
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
 import com.mj.helloapp.R;
+import com.mj.helloapp.cache.DataCache;
+import com.mj.helloapp.constant.Constant;
 import com.mj.helloapp.fragment.BookFragment;
 import com.mj.helloapp.fragment.HomeFragment;
 import com.mj.helloapp.fragment.MusicFragment;
-import com.mj.libcommon.ui.BaseActivity;
+import com.mj.libcommon.ui.base.activity.BaseActivity;
 
 public class MainActivity extends BaseActivity implements BottomNavigationBar.OnTabSelectedListener {
     private BottomNavigationBar bottomNavigationBar;
@@ -20,6 +22,7 @@ public class MainActivity extends BaseActivity implements BottomNavigationBar.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        DataCache.getInstens(this).putBoolean(Constant.IS_LOGIN_MIAN,true);
         bottomNavigationBar = (BottomNavigationBar) findViewById(R.id.bottom_navigation_bar);
         bottomNavigationBar.setTabSelectedListener(this);
         refresh();
@@ -65,13 +68,31 @@ public class MainActivity extends BaseActivity implements BottomNavigationBar.On
         fragmentTransaction.commit();
     }
 
-    @Override
-    public void onTabUnselected(int position) {
+    @Override//
+    public void onTabUnselected(int position) {//
 
     }
 
     @Override
     public void onTabReselected(int position) {
 
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                LogUtils.e("liuwei", " onResume");
+//                OkHttpUtil.getInstance().get("http://guolin.tech/api/china", new ResultCallBack() {
+//                    @Override
+//                    public void onResultCallBack(String response) {
+//                        LogUtils.e(MainActivity.this,response);
+//                    }
+//                });
+//
+//            }
+//        }).start();
     }
 }

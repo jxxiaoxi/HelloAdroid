@@ -1,1 +1,1 @@
-include ':app', ':libcommon', ':viewpagerdemo', ':libcommon', ':libcommon'
+include ':app', ':libcommon', ':viewpagerdemo', ':libcommon', ':libcommon', ':mainapp', ':recyclerviewdemo', ':phoneshake', ':helloapp', ':NetWorkDemo', ':generictest', ':boottest', ':loadview'

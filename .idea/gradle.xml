@@ -8,8 +8,16 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/NetWorkDemo" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/boottest" />
+            <option value="$PROJECT_DIR$/generictest" />
+            <option value="$PROJECT_DIR$/helloapp" />
             <option value="$PROJECT_DIR$/libcommon" />
+            <option value="$PROJECT_DIR$/loadview" />
+            <option value="$PROJECT_DIR$/mainapp" />
+            <option value="$PROJECT_DIR$/phoneshake" />
+            <option value="$PROJECT_DIR$/recyclerviewdemo" />
             <option value="$PROJECT_DIR$/viewpagerdemo" />
           </set>
         </option>

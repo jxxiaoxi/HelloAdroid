@@ -3,8 +3,16 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HelloAdroid.iml" filepath="$PROJECT_DIR$/HelloAdroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NetWorkDemo/NetWorkDemo.iml" filepath="$PROJECT_DIR$/NetWorkDemo/NetWorkDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boottest/boottest.iml" filepath="$PROJECT_DIR$/boottest/boottest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/generictest/generictest.iml" filepath="$PROJECT_DIR$/generictest/generictest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/helloapp/helloapp.iml" filepath="$PROJECT_DIR$/helloapp/helloapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/libcommon/libcommon.iml" filepath="$PROJECT_DIR$/libcommon/libcommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loadview/loadview.iml" filepath="$PROJECT_DIR$/loadview/loadview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mainapp/mainapp.iml" filepath="$PROJECT_DIR$/mainapp/mainapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/phoneshake/phoneshake.iml" filepath="$PROJECT_DIR$/phoneshake/phoneshake.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recyclerviewdemo/recyclerviewdemo.iml" filepath="$PROJECT_DIR$/recyclerviewdemo/recyclerviewdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewpagerdemo/viewpagerdemo.iml" filepath="$PROJECT_DIR$/viewpagerdemo/viewpagerdemo.iml" />
     </modules>
   </component>

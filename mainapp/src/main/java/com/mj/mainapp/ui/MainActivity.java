@@ -5,11 +5,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.IBinder;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.mj.libcommon.ui.BaseActivity;
+import com.mj.libcommon.ui.base.activity.BaseActivity;
 import com.mj.libcommon.util.LogUtils;
 import com.mj.mainapp.R;
 import com.mj.mainapp.service.RetrieveDataService;
