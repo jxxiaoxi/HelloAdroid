@@ -7,7 +7,7 @@
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="3dc14045b08a06603d94dd685450d8d4e007b2bd">
+        sha1="dfb2b6c204ac44363da30d5850ca1ffe522d5687">
         <dex dex="/root/AndroidStudioProjects/HelloAdroid/helloapp/build/intermediates/pre-dexed/debug/classes_1e5304a557cb8351e86622a54500216d5f25c27e.jar" />
     </item>
 

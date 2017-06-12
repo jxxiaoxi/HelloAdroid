@@ -2,7 +2,7 @@ package com.mj.helloapp.fragment;
 
 import android.os.Bundle;
 
-import com.mj.helloapp.R;
+import com.mj.libcommon.ui.base.fragment.BaseFragment;
 
 /**
  * Created by liuwei on 2/6/17.
@@ -22,7 +22,7 @@ public class BookFragment extends BaseFragment {
     }
 
     @Override
-    public int getFragmentView() {
-        return R.layout.fragment_book;
+    public String setTitle() {
+        return "Book";
     }
 }

@@ -22,7 +22,7 @@ public class MainActivity extends BaseActivity implements BottomNavigationBar.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        DataCache.getInstens(this).putBoolean(Constant.IS_LOGIN_MIAN,true);
+        DataCache.getInstens(this).putBoolean(Constant.IS_LOGIN_MIAN, true);
         bottomNavigationBar = (BottomNavigationBar) findViewById(R.id.bottom_navigation_bar);
         bottomNavigationBar.setTabSelectedListener(this);
         refresh();
